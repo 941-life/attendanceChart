@@ -1,6 +1,6 @@
 # AIIA Attendance
 
-A web application that visually displays AIIA's attendance rates.
+A page that visually displays AIIA's attendance rates.
 
 ![Dashboard Preview](src/img/aiia.png)
 
