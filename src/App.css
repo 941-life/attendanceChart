@@ -36,3 +36,116 @@
     transform: rotate(360deg);
   }
 }
+
+/* 전체 앱 컨테이너 */
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* 헤더 스타일 */
+.app-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+    color: #2c3e50;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #666;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* 대시보드 컨테이너 */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* 로딩 스피너 */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 에러 컨테이너 */
+.error-container {
+    text-align: center;
+    padding: 2rem;
+    background: #fff3f3;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 500px;
+}
+
+.error-container p {
+    color: #dc3545;
+    margin-bottom: 1rem;
+}
+
+.error-container button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.error-container button:hover {
+    background-color: #c82333;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .app-container {
+        padding: 1rem;
+    }
+
+    .app-header {
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .app-header h1 {
+        font-size: 2rem;
+    }
+
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
+}
