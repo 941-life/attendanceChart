@@ -48,8 +48,9 @@ npm install
 
 3. Environment Setup
 This project requires a `.env` file to run properly. Please contact the repository owner to get the necessary environment variables.
+AIR's REST API is secured
 
-4. Start development server
+5. Start development server
 ```bash
 npm start
 ```
@@ -90,18 +91,3 @@ src/
   ├── index.js       # Entry point
   └── index.css      # Global styles
 ```
-
-## Contributing
-
-1. Create or check existing issues
-2. Create a new branch
-3. Commit your changes
-4. Create a Pull Request
-
-## License
-
-MIT License
-
-## Contact
-
-Please create an issue for any inquiries.
