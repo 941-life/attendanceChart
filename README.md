@@ -1,4 +1,4 @@
-# AIIA AIR Website
+# AIIA Attendance
 
 A web application that visually displays AIIA's attendance rates.
 
