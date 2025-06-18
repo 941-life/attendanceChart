@@ -1,1 +1,0 @@
-https://air.aiia-gcu.com/attendance/rate==>REPLACED_API_ENDPOINT 
